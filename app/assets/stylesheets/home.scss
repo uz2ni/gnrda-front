@@ -1,0 +1,14 @@
+.nav-top-list-item {
+    height: 86px;
+}
+.nav-top-list-item:hover {
+    border-bottom: 3px solid #f16a20;
+}
+.nav-top-list-item > a {
+    font-size: 1.2rem;
+    color: #CFD0D2;
+}
+.nav-top-list-item > a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
