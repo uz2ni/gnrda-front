@@ -46,6 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a {text-decoration: none; outline: none}
-a:hover, a:active {text-decoration: none;}
+a {text-decoration: none; outline: none; color: black;}
+a:hover, a:active {text-decoration: none; color: black;}
 // 초기화 끝
+
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}

@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import "common";
+@import "navigation";
 @import "home";
-@import "style";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -17,3 +17,36 @@
  *= require_tree .
  *= require_self
  */
+
+.nav-top-list-item {
+    height: 86px;
+}
+.nav-top-list-item:hover {
+    border-bottom: 3px solid #f16a20;
+}
+.nav-top-list-item > a {
+    font-size: 1.2rem;
+    color: #CFD0D2;
+}
+.nav-top-list-item > a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+.page-wrap {
+    margin-top:85px;
+}
+
+// 태블릿 이하
+@media (max-width: 767px) {
+    .nav-top-list-item > a {
+        font-size: 1.0rem;
+    }
+    .nav-expander {
+        margin-right: 15px;
+    }
+}
+
+// 스마트폰 이하
+@media (max-width: 575px) {
+    
+}

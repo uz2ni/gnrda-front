@@ -1,14 +1,261 @@
-.nav-top-list-item {
-    height: 86px;
+/****** index ******/
+/** font **/
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight:normal; font-style: normal; }
+.main-font{
+  font-family: 'TmonMonsori' !important;
 }
-.nav-top-list-item:hover {
-    border-bottom: 3px solid #f16a20;
+.text-font{ font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
+// 폰트 변수 설정
+$main-font: 'TmonMonsori';
+$text-font: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+$main-color: #CC5818;
+
+// 페이지 기본 폰트 지정
+.container-fluid * {
+  font-family: $text-font;
 }
-.nav-top-list-item > a {
-    font-size: 1.2rem;
-    color: #CFD0D2;
+
+/**section - search - start **/
+.section-search {
+    height: 100vh;
+    position: relative;
 }
-.nav-top-list-item > a:hover{
-    color: #ffffff;
+.bg-wrap {
+    position: absolute;
+    height:100vh;
+    width: 100%;
+    opacity: 0.7;
+    background-image: url('../assets/index/main_background.jpg');
+    background-position: center center;
+	  background-repeat:  no-repeat;
+	  background-attachment: fixed;
+	  background-size:  cover;
+}
+// search form
+.field-container {
+  // position: relative;
+  // top: 50vh;
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+  width: 400px;
+  height: 50px;
+}
+
+.icons-container {
+  position: relative;
+  left: 370px;
+  bottom: 35px;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  font-size: 1.2rem;
+  color: #CFD0D2;
+}
+
+.field {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 4px 8px 10px rgba(#4B4848, 0.3);
+}
+.search-tag {
+  font-size: 1.1rem;
+  width: 500px;
+  margin: 0 auto;
+}
+.search-tag-all {
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+.tag-style{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+/**section - search - end **/
+/**section - card - start **/
+.section-box-twelve{
+    height: 250px;
+    background: radial-gradient(#6e6e6e,#2f2f2f);
+    background: -webkit-radial-gradient(#6e6e6e,#2f2f2f);
+    background: -moz-radial-gradient(#6e6e6e,#2f2f2f);
+    color: #fff;
+    position: relative;
+    overflow:hidden;
+}
+.section-box-twelve figure {
+    position: absolute;
+    text-align: center;
+    padding: 10px 19px 19px 19px;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out .5s;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+.section-box-twelve:hover figure {
+    //background: rgba(0, 0, 0, 0.71);
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 10px black;
+}
+.section-box-twelve figure a{
+    color: #fff;
+    top: 35%;
+    position: relative;
+    font-size: 1.5rem;
+}
+.section-box-twelve img{
+    height: 100%;
+}
+/**section - card - end **/
+/**section - list - end **/
+.section-list {
+  background-color: #f1f1f1;
+}
+.list-wrap{
+  height: 40vh;
+}
+.list-img {
+  width: auto;
+  height: 40vh;
+  object-fit: cover;
+}
+.list-title {
+  font-size: 2rem;
+  height: 20%;
+}
+.list-content {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  height: 70%;
+}
+.list-content-ellip{
+  width: 720px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.list-info {
+  height: 10%;  
+}
+.list-info > span {
+  display: inline-block;
+}
+.list-info > span:nth-child(3) {
+  right: 0;
+}
+
+/**section - list - end **/
+
+
+
+/***** 미디어 쿼리 *****/
+// 태블릿 이하
+@media (max-width: 767px) {
+  // list-img 크기
+  .list-img {
+    height: 20vh;
+  }
+  .list-wrap {
+    height: 20vh;
+  }
+  .list-title {
+    font-size: 1.5rem;
+  }
+  .list-content {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    height: 60%;
+  }
+  .list-info {
+    height: 20%;
+    font-size: 0.8rem;
+  }
+}
+// 스마트폰 이하
+@media (max-width: 575px) {
+  .search-tag {
+    font-size: 1rem;
+    width: 250px;
+  }
+  .search-tag-all {
+    font-size: 1rem;
+  }
+  // 검색 폼 크기
+  .field-container {
+      width: 100%;
+  }
+  .icons-container {
+      position: relative;
+      left: 90%;
+  }
+  // list-img 크기
+  .list-img {
+    height: 30vh;
+  }
+  .list-wrap {
+    height: 30vh;
+  }
+  .list-title {
+    font-size: 1rem;
+  }
+  .list-content {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    height: 60%;
+  }
+  .list-info {
+    height: 20%;
+    font-size: 0.7rem;
+  }
+
+
+}
+
+/****** trending, hot, created ******/
+article {
+  width: 65%;
+}
+aside {
+  width: 17.5%;
+}
+.sidebar-header {
     font-weight: bold;
+    font-size: 1.125rem;
+    margin: 0 0 1rem 0;  
+}
+.sidebar-list-item {
+  line-height: 1.2;
+}
+.sidebar-link:hover, .user-name a:hover  {
+  color: $main-color;
+}
+.article-header h1 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+// 공통
+.user-img{
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+.article-summary .user-img {
+  width: 24px;
+  height: 24px;
+}
+.user-name a, .reputation {
+  font-size: 0.875rem;
+}
+.article-summary-content-block-img img {
+  width: 100%;
 }
