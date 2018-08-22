@@ -11,4 +11,10 @@ class HomeController < ApplicationController
   def hot
   end
   
+  def create
+  end
+  
+  def ex
+  end
+  
 end

@@ -2,6 +2,11 @@
 @import "common";
 @import "navigation";
 @import "home";
+@import "summernote";   
+@import "summernote-bs4";   
+@import "summernote-lite";   
+@import "editor";
+@import "register";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -17,7 +22,13 @@
  *= require_tree .
  *= require_self
  */
-
+ 
+.logo-section, .bar-section {
+    width: 30vh;
+}
+.nav-section {
+    width: 40vh;
+}
 .nav-top-list-item {
     height: 86px;
 }

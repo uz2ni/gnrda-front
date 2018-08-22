@@ -3,10 +3,10 @@
 <head>
   <title>Workspace</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -74,21 +74,40 @@
 <div class="navbar navbar-default fixed-top d-block p-0">
 	<div class="navbar-inner d-flex justify-content-between align-items-center">
 	  <!-- logo (left) -->
-		<a href="/" class="ml-2 ml-md-3 p-1">
+		<a href="/" class="pl-2 pl-md-3 logo-section">
 			<img class="logo" src="/img/gnrda_mini_logo.png" alt="Logo" width="50" height="50" />
 		</a>
 		<!-- top nav button (center) -->
-		<div class="nav-top">
-		  <ul class="nav-top-list d-flex main-font">
+		<div class="nav-top nav-section">
+		  <ul class="nav-top-list d-flex justify-content-center main-font">
 		    <li class="nav-top-list-item mx-2 mx-md-3 d-flex align-items-center"><a href="/trending">추천글</a></li>
 		    <li class="nav-top-list-item mx-2 mx-md-3 d-flex align-items-center"><a href="/hot">인기글</a></li>
 		    <li class="nav-top-list-item mx-2 mx-md-3 d-flex align-items-center"><a href="/created">최신글</a></li>
 		  </ul>
 		</div>
-		<!-- sidebar button (right)  -->
-		<a href="#" id="nav-expander" class="nav-expander my-0">
-			<i class="fas fa-bars ml-1"></i>
-		</a>
+		<!-- register -->
+		<div class="bar-section d-flex align-items-center justify-content-end">
+			<div>
+				<!-- login 전 -->
+				<!--<a href="/login" class="register login">로그인</a>-->
+				<!--<a href="/join" class="register join">회원가입</a>-->
+				<!-- login 후 -->
+				<div class="d-flex align-items-center">
+					<a href="#" class="register-before bar-profile">
+						<img src="http://chittagongit.com//images/my-profile-icon-png/my-profile-icon-png-2.jpg" width="30" height="30">
+					</a>
+					<a href="/create" class="register-before create-icon">
+						<i class="far fa-edit"></i>
+					</a>
+				</div>
+			</div>
+			
+			<!-- sidebar button (right)  -->
+			<a href="#" id="nav-expander" class="nav-expander my-0 mx-4">
+				<i class="fas fa-bars ml-1"></i>
+			</a>
+		</div>
+		
 	</div>
 </div>
 <!--/nav topbar  -->

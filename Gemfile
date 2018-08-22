@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# image upload
+gem 'paperclip'
 # boostrap 4.1.1
 gem 'bootstrap', '~> 4.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

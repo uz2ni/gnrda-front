@@ -1,0 +1,32 @@
+<div class="row d-flex justify-content-center pt-5">
+    <div id="summernote"></div>
+</div>
+<div class="row d-flex justify-content-center">
+    <a href="#" class="btn gnrda btn-light px-4 my-3 mx-1">뒤로</a>
+    <a href="#" class="btn gnrda btn-gnrda px-4 my-3 mx-1" onclick="output()">완료</a>
+</div>
+<script>
+      $(document).ready(function() {
+          $('#summernote').summernote({
+              placeholder: '글을 작성해주세요.',
+              tabsize: 2,
+              height: 500,                 // set editor height
+              minHeight: 500,             // set minimum height of editor
+              maxHeight: 500,             // set maximum height of editor
+              focus: true    
+          });
+          
+
+          // 추가
+          $('.note-link-popover, .note-image-popover, .note-table-popover').css("display", "none");
+      });
+      
+      function customEditor() {
+          $('.note-editor').addClass('col-10');
+      }
+      
+      function output() {
+          var markupStr = $('#summernote').summernote('code');
+          console.log(markupStr);
+      }
+</script>

@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   get '/trending' => 'home#trending'
   get '/created' => 'home#created'
   get '/hot' => 'home#hot'
+  get '/create' => 'home#create'
+  
+  get '/login' => 'register#login'
+  get '/join' => 'register#join'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
