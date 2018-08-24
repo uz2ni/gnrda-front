@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/hot' => 'home#hot'
   get '/create' => 'home#create'
   get '/view' => 'home#view'
+  get '/mypage' => "home#mypage"
   
   get '/login' => 'register#login'
   get '/join' => 'register#join'

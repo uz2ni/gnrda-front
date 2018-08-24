@@ -1,0 +1,62 @@
+$main-color: #CC5818;
+$sub-color: #F16A19;
+
+.mypage-wrap {
+    background-color: #5a5a5a;
+}
+.profile-mypage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:2px solid white;
+}
+.mypage-img-wrap {
+    width: 120px;
+    height: 120px;
+}
+.mypage-name {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.mypage-follow *{
+    color: white;
+}
+.speech-bubble {
+	position: relative;
+	background: white;
+	border-radius: .4em;
+	min-width: 250px;
+    min-height: 100px;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: white;
+	border-top: 0;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.mypage-tab-ul {
+    height: 50px;
+}
+.mypage-tab-ul > li {
+    margin: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    -moz-transition:border-bottom .1s ease;   
+  	-o-transition:border-bottom .1s ease;   
+  	-ms-transition:border-bottom .1s ease;   
+  	-webkit-transition:border-bottom .1s ease;   
+  	transition:border-bottom .1s ease;
+}    
+.mypage-tab-ul > li:hover {
+    border-bottom: 3px solid $sub-color;
+}

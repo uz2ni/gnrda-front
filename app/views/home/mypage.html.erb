@@ -1,0 +1,46 @@
+<!-- profile -->
+<div class="d-flex flex-column align-items-center py-3 mypage-wrap">
+    <div class="mypage-img-wrap mx-auto">
+        <img src="//upload.wikimedia.org/wikipedia/commons/thumb/5/50/Albert_Einstein_%28Nobel%29.png/100px-Albert_Einstein_%28Nobel%29.png" class="img-fluid profile-mypage">
+    </div>
+    <p class="mt-2 mb-3 text-white mypage-name">그느르다 (10)</p>
+    <div class="speech-bubble p-2">aaa</div>
+    <div class="my-3 mypage-follow">
+        <a href="#" data-toggle="modal" data-target="#followingList"><span class="font-weight-bold">100</span><span class="ml-1 mr-1">팔로잉</span></a>
+        <a href="#"><span class="font-weight-bold ml-1">200</span><span class="ml-1">팔로워</span></a>
+        <a href="" class="btn btn-follow px-2 py-1 ml-3 text-white sub-color">팔로우</a>
+    </div>
+    <!--Following modal-->
+    <div class="modal fade" id="followingList" tabindex="-1" role="dialog" aria-labelledby="followingListTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="followingListTitle">팔로잉 리스트</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--following modal end-->
+</div>
+
+<!-- tab -->
+<div class="container">
+    <ul class="d-flex justify-content-center mypage-tab-ul my-2">
+        <li><a href="#">게시글</a></li>
+        <li><a href="#">댓글</a></li>
+        <li><a href="#">좋아요</a></li>
+        <li><a href="#">보상</a></li>
+    </ul>
+</div>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
+</script>

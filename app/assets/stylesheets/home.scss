@@ -17,6 +17,7 @@ $text-font: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
     background: #F16A19;
 }
 $main-color: #CC5818;
+$sub-color: #F16A19;
 
 // 페이지 기본 폰트 지정
 .container-fluid * {
@@ -154,6 +155,9 @@ $main-color: #CC5818;
 }
 .list-info > span:nth-child(3) {
   right: 0;
+}
+.card > div {
+  height: 200px;
 }
 
 /**section - list - end **/
