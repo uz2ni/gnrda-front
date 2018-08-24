@@ -1,0 +1,57 @@
+.view-wrap, .view-wrap * {
+    // border: 1px solid black;
+}
+.view-wrap {
+    // width: 60%;
+    padding-bottom: 100px;
+    // margin: 0 auto;
+}
+.view-wrap > .view-title > h1 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.profile {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.view-tag a {
+    display: inline-block;
+}
+.tag-btn {
+    background-color: #d8d8d8;
+    color: white;
+    font-weight: lighter;
+    -moz-transition:background-color .2s ease;   
+  	-o-transition:background-color .2s ease;   
+  	-ms-transition:background-color .2s ease;   
+  	-webkit-transition:background-color .2s ease;   
+  	transition:background-color .2s ease;
+}
+.tag-btn:hover {
+    background-color: #bbbbbb;
+    color: white;
+}
+.writer-info-follower {
+    font-size: 0.7rem;
+}
+.btn-follow, .comment-text, .comment-info {
+    font-size: 0.8rem;
+}
+.btn-follow:hover {
+    background-color: $main-color;
+    -moz-transition:background-color .2s ease;   
+  	-o-transition:background-color .2s ease;   
+  	-ms-transition:background-color .2s ease;   
+  	-webkit-transition:background-color .2s ease;   
+  	transition:background-color .2s ease;
+}
+.comment-add {
+    width: fit-content;
+}
+.comment-info * {
+    color: #6f6f6f;
+}

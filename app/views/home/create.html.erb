@@ -1,6 +1,19 @@
 <div class="row d-flex justify-content-center pt-5">
+    <div class="input-group mb-3 col-6 title-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">제목</span>
+      </div>
+      <input type="text" placeholder="제목을 입력해주세요." class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
     <div id="summernote"></div>
+    <div class="input-group col-6 mt-3 mb-2 tag-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">태그</span>
+      </div>
+      <input type="text" placeholder=", 단위로 입력해주세요." class="form-control create-tag" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
 </div>
+<div class="mx-auto tag-container col-6 my-3"></div>
 <div class="row d-flex justify-content-center">
     <a href="#" class="btn gnrda btn-light px-4 my-3 mx-1">뒤로</a>
     <a href="#" class="btn gnrda btn-gnrda px-4 my-3 mx-1" onclick="output()">완료</a>
@@ -29,4 +42,11 @@
           var markupStr = $('#summernote').summernote('code');
           console.log(markupStr);
       }
+</script>
+<!-- tagmanager js -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tagmanager/3.0.2/tagmanager.min.js"></script>
+<script type="text/javascript">
+	$(".create-tag").tagsManager({
+	  tagsContainer : '.tag-container'
+	});
 </script>

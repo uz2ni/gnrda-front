@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tagmanager/3.0.2/tagmanager.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
   <%= csrf_meta_tags %>
@@ -89,17 +90,19 @@
 		<div class="bar-section d-flex align-items-center justify-content-end">
 			<div>
 				<!-- login 전 -->
-				<!--<a href="/login" class="register login">로그인</a>-->
-				<!--<a href="/join" class="register join">회원가입</a>-->
-				<!-- login 후 -->
-				<div class="d-flex align-items-center">
-					<a href="#" class="register-before bar-profile">
-						<img src="http://chittagongit.com//images/my-profile-icon-png/my-profile-icon-png-2.jpg" width="30" height="30">
-					</a>
-					<a href="/create" class="register-before create-icon">
-						<i class="far fa-edit"></i>
-					</a>
+				<div>
+					<a href="/login" class="register login">로그인</a>
+					<a href="/join" class="register join">회원가입</a>
 				</div>
+				<!-- login 후 -->
+				<!--<div class="d-flex align-items-center">-->
+				<!--	<a href="#" class="register-before bar-profile">-->
+				<!--		<img src="http://chittagongit.com//images/my-profile-icon-png/my-profile-icon-png-2.jpg" width="30" height="30">-->
+				<!--	</a>-->
+				<!--	<a href="/create" class="register-before create-icon">-->
+				<!--		<i class="far fa-edit"></i>-->
+				<!--	</a>-->
+				<!--</div>-->
 			</div>
 			
 			<!-- sidebar button (right)  -->

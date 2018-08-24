@@ -14,6 +14,9 @@ class HomeController < ApplicationController
   def create
   end
   
+  def view
+  end
+  
   def ex
   end
   
